@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 
 // Imports part of the lesson
 import { HttpModule } from '@angular/http';
+import { JokesComponent } from './jokes/jokes/jokes.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JokesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
